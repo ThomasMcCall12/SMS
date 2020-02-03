@@ -2,7 +2,7 @@
 #Creats database connection 
 $dbServername ="db5000145007.hosting-data.io";
 $dbUsername ="dbu97693";
-$dbPassword = "fBFL?K;8Kg";
+$dbPassword = "redacted";
 $dbname ="dbs140308";
 
 $conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbname);

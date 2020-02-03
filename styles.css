@@ -1,0 +1,98 @@
+body {
+	background-color: #ccc;
+}
+
+.navbar_frontpage{
+	background-color: white;
+	width: 100%;
+	height: 135px;
+	line-height: 13px;
+	text-align: center;
+	
+	
+}
+.navbar_frontpage a{
+	text-decoration: none;
+}
+.navbar_frontpage h1{
+	color: red;
+	font-size: 20px;
+	line-height: 13px;
+	margin: 0;
+}
+
+/* Sign in styles */
+.signInForm {
+	color: red;
+	margin: 0 auto; 
+	padding-top: 50px;
+	width: 500px;
+}
+.signInForm input{
+	background: #5ef413;
+	border-color: black;
+	border: 3;
+	color: black;
+	line-height: 25px;
+}
+.signInForm ::placeholder{
+	color: black;
+}
+
+/* sign up styles */ 
+
+.signUpForm {
+	color: red;
+	margin: 0 auto; 
+	padding-top: 50px;
+	width: 500px;
+}
+.signUpForm input{
+	background: #5ef413;
+	border-color: black;
+	border: 3;
+	color: black;
+	line-height: 25px;
+}
+.signUpForm ::placeholder{
+	color: black;
+}
+
+/*Pass changing form */ 
+
+.passChangeForm {
+	color: red;
+	margin: 0 auto; 
+	padding-top: 50px;
+	width: 500px;
+}
+.passChangeForm input{
+	background: #5ef413;
+	border-color: black;
+	border: 3;
+	color: black;
+	line-height: 25px;
+}
+.passChangeForm ::placeholder{
+	color: black;
+}
+
+/*homework viewing table*/
+.homeworkViewTable {
+	font-size:30px;
+	color:black;
+	width:75%;
+	border-width: 3px;
+	border-color: black;
+	
+}
+
+/*default forms for when style is not applied*/
+
+form input {
+	background: #5ef413;
+	border-color: black;
+	border: 3;
+	color: black;
+	line-height: 25px;
+}

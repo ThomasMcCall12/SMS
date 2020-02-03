@@ -1,0 +1,98 @@
+##The following are all of the SQL commands used for table creation 
+
+create table UserLoginData (
+	id integer auto_increment not null primary key,
+	username varchar(1000),
+	email varchar(1000),
+	password varchar(1000),
+	USN varchar(100),
+	last_connct_ip varchar(20)
+
+);
+
+create table Homeworks (
+	id integer auto_increment not null primary key,
+	taskname varchar(1000),
+	teacher varchar(1000),
+	taskdetails varchar(2000)
+);
+
+create table HomeworksUserLink (
+	userID integer not null,
+	homeworkID integer not null,
+	Status varchar(5),
+	primary key (userID, homeworkID)
+);
+
+create table classDetails (
+	classID integer auto_increment not null primary key,
+	className varchar(1000),
+	teacherName varchar(1000),
+	maxClassSize integer
+);
+
+create table schoolDetails (
+	schoolID integer auto_increment not null primary key,
+	schoolName varchar(1000),
+	postcode varchar(1000),
+	schoolPhoneNumer varchar(1000),
+	schoolEmail varchar(1000),
+	notes varchar(1000)
+
+);
+
+create table schoolUserLink (
+	userID integer not null,
+	schoolID integer not null,
+	primary key (userID, schoolID)
+);
+
+create table userClassLink (
+	userID integer not null,
+	classID integer not null,
+	primary key (userID, classID)
+);
+
+create table schoolClassLink(
+	schoolID integer not null,
+	classID integer not null,
+	primary key (schoolID,classID)
+);
+
+create table Blacklist(
+	IP integer not null primary key
+);
+
+create table lockedAccounts(
+	ID integer not null primary key
+);
+
+create table roomsList(
+	ID integer not null primary key,
+	schoolCode integer not null,
+	safeSeatNum integer not null,
+	comps boolean not null,
+	timesBooked integer not null,
+	details VARCHAR(1000)
+);
+
+create table roomPupilBookLink (
+	userID integer not null,
+	roomID integer not null,
+	dateOfUse date,
+	timeOfUse time,
+	primary key(userID,roomID)
+);
+
+create table messages (
+	ID integer not null AUTO_INCREMENT primary key,
+	Message VARCHAR(10000),
+	TIMESTAMP Timestamp
+);
+
+create table userMessageLink (
+	toID integer not null,
+	fromID integer not null,
+	messageID integer not null,
+	primary key(toID,fromID,messageID)
+);
